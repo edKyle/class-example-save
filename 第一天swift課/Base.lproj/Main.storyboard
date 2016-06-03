@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wSu-42-j8a">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PlaygroundViewController" customModule="第一天swift課" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-1" translatesAutoresizingMaskIntoConstraints="NO" id="81x-Id-wje">
+                                <rect key="frame" x="20" y="20" width="187" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="Smp-dx-sd0"/>
+                                    <constraint firstAttribute="height" constant="139" id="haO-MG-dRw"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="WdC-wn-ijK">
+                                <rect key="frame" x="34" y="249" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="cLM-8O-DQB"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="slide:" destination="BYZ-38-t0r" eventType="valueChanged" id="akf-Ip-xJ2"/>
+                                </connections>
+                            </slider>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="N54-va-RTH">
+                                <rect key="frame" x="36" y="180" width="150" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="DMo-8f-sy6"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYv-BW-CnV">
+                                <rect key="frame" x="36" y="298" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="api-fz-vXt">
+                                <rect key="frame" x="51" y="203" width="94" height="29"/>
+                                <connections>
+                                    <action selector="steppChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="jkG-ZP-sXf"/>
+                                </connections>
+                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vb9-3T-uWi">
+                                <rect key="frame" x="215" y="28" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="2jT-iN-uWP"/>
+                                    <constraint firstAttribute="height" constant="30" id="tS5-Rs-68X"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c57-z9-1RY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="F1145EFF-73DB-4BC3-8FA4-C2846B03060B" translatesAutoresizingMaskIntoConstraints="NO" id="b0X-0U-CUg">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="WaL-Cb-cP4"/>
+                                    <constraint firstAttribute="width" constant="266" id="ZUt-ir-Ot0"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WaL-Cb-cP4"/>
+                                        <exclude reference="ZUt-ir-Ot0"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="WaL-Cb-cP4"/>
+                                        <include reference="ZUt-ir-Ot0"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N54-va-RTH" firstAttribute="leading" secondItem="WdC-wn-ijK" secondAttribute="leading" id="0Lb-8d-vDW"/>
+                            <constraint firstItem="N54-va-RTH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="5DQ-L7-5Ol"/>
+                            <constraint firstItem="81x-Id-wje" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7S2-am-dHe"/>
+                            <constraint firstItem="b0X-0U-CUg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9af-DV-Zc8"/>
+                            <constraint firstItem="N54-va-RTH" firstAttribute="top" secondItem="81x-Id-wje" secondAttribute="bottom" constant="21" id="Dsg-f6-Xow"/>
+                            <constraint firstItem="api-fz-vXt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="LxH-he-PlY"/>
+                            <constraint firstItem="WdC-wn-ijK" firstAttribute="top" secondItem="api-fz-vXt" secondAttribute="bottom" constant="17" id="WgG-KS-m9h"/>
+                            <constraint firstItem="N54-va-RTH" firstAttribute="leading" secondItem="cYv-BW-CnV" secondAttribute="leading" id="Wii-GD-mP3"/>
+                            <constraint firstItem="81x-Id-wje" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZOz-3M-7vB"/>
+                            <constraint firstItem="vb9-3T-uWi" firstAttribute="leading" secondItem="81x-Id-wje" secondAttribute="trailing" constant="8" id="eHS-z1-MDi"/>
+                            <constraint firstItem="b0X-0U-CUg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ftJ-Ck-j1K"/>
+                            <constraint firstItem="api-fz-vXt" firstAttribute="top" secondItem="N54-va-RTH" secondAttribute="bottom" constant="21" id="ng1-o1-PHs"/>
+                            <constraint firstItem="vb9-3T-uWi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="o2V-Jf-TA0"/>
+                            <constraint firstItem="cYv-BW-CnV" firstAttribute="top" secondItem="WdC-wn-ijK" secondAttribute="bottom" constant="19" id="vhv-Ay-gtA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="b0X-0U-CUg"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9af-DV-Zc8"/>
+                                <exclude reference="ftJ-Ck-j1K"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="b0X-0U-CUg"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9af-DV-Zc8"/>
+                                <include reference="ftJ-Ck-j1K"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Zkd-Lg-Qr0"/>
+                    <connections>
+                        <outlet property="bigImage" destination="b0X-0U-CUg" id="bmw-7e-i93"/>
+                        <outlet property="imageView" destination="81x-Id-wje" id="lLc-ME-4XD"/>
+                        <outlet property="label" destination="cYv-BW-CnV" id="5kl-ai-Lga"/>
+                        <outlet property="load" destination="N54-va-RTH" id="JZy-HO-gWI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="-27"/>
+        </scene>
+        <!--New Table Table View Controller-->
+        <scene sceneID="CVQ-NM-qzj">
+            <objects>
+                <tableViewController id="C6J-hQ-LcC" customClass="NewTableTableViewController" customModule="第一天swift課" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JhP-vq-1d1" customClass="New">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="image cell" textLabel="3MQ-9e-J5Q" style="IBUITableViewCellStyleDefault" id="LHW-1u-ctz">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LHW-1u-ctz" id="Wfq-gE-QCU">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3MQ-9e-J5Q">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="buttoncell" id="MYf-8y-EaY" customClass="ButtonTableViewCell" customModule="第一天swift課" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MYf-8y-EaY" id="ECb-h6-V18">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TU9-KQ-w3l">
+                                            <rect key="frame" x="27" y="8" width="46" height="29"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="46" id="5Gg-8s-Maq"/>
+                                                <constraint firstAttribute="height" constant="29" id="lhx-0J-YUS"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otA-hc-wz2">
+                                            <rect key="frame" x="531" y="8" width="46" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="27" id="kMe-MU-bBS"/>
+                                                <constraint firstAttribute="width" constant="46" id="uZ5-16-XEc"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="rightButton:" destination="MYf-8y-EaY" eventType="touchUpInside" id="ztP-8v-aT2"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="otA-hc-wz2" secondAttribute="bottom" constant="0.5" id="4Vr-pq-q6A"/>
+                                        <constraint firstItem="TU9-KQ-w3l" firstAttribute="leading" secondItem="ECb-h6-V18" secondAttribute="leadingMargin" constant="19" id="5hx-iD-B1E"/>
+                                        <constraint firstItem="otA-hc-wz2" firstAttribute="top" secondItem="ECb-h6-V18" secondAttribute="topMargin" id="6Ze-ie-eqL"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="TU9-KQ-w3l" secondAttribute="bottom" constant="-1.5" id="9t6-If-YQO"/>
+                                        <constraint firstItem="TU9-KQ-w3l" firstAttribute="top" secondItem="ECb-h6-V18" secondAttribute="topMargin" id="gmL-2n-RYT"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="otA-hc-wz2" secondAttribute="trailing" constant="15" id="mJa-VA-nXY"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="leftButton" destination="TU9-KQ-w3l" id="Pfo-hJ-uEV"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="C6J-hQ-LcC" id="UuR-T4-pzO"/>
+                            <outlet property="delegate" destination="C6J-hQ-LcC" id="jGv-W8-e0B"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="wht-By-RKr">
+                        <barButtonItem key="leftBarButtonItem" title="switch to first tab" id="lQo-su-T1U">
+                            <connections>
+                                <action selector="switchToFirstTab:" destination="C6J-hQ-LcC" id="ALy-Z7-DIq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="pRc-dZ-d8J">
+                            <connections>
+                                <action selector="edidTableView:" destination="C6J-hQ-LcC" id="QVj-tR-gNP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableController" destination="JhP-vq-1d1" id="Kks-d0-haS"/>
+                        <outlet property="tableView" destination="JhP-vq-1d1" id="ejK-nz-qa8"/>
+                        <segue destination="EgC-NX-2IW" kind="show" identifier="showimage" id="cAv-Au-arj"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rxd-BK-3xk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1619" y="652"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="dDl-y8-tOq">
+            <objects>
+                <navigationController id="VcQ-Gn-StS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="lvL-y8-Onb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c5t-do-IYv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="C6J-hQ-LcC" kind="relationship" relationship="rootViewController" id="GwZ-xX-h3l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Srw-bE-xIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955" y="659"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="E8G-a1-RNb">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="EgC-NX-2IW" customClass="ImageViewController" customModule="第一天swift課" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R1r-D6-B3b"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Gz-73-3F2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hFX-LJ-oA9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="vQC-h5-21V">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="vQC-h5-21V" id="pGf-yn-DIa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UqP-fW-n0O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2295" y="652"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="T4D-Yy-W55">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="wSu-42-j8a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="UeB-Ek-qyB">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="4ds-dA-2g1"/>
+                        <segue destination="VcQ-Gn-StS" kind="relationship" relationship="viewControllers" id="mLE-hT-LHz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iEt-xL-WU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243.75" y="307.3943661971831"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="F1145EFF-73DB-4BC3-8FA4-C2846B03060B" width="87" height="64">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
+GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
+c1dOU0NvbG9ygAKADRIgwAAAgAOAC1h7ODcsIDY0fdIVChYYWk5TLm9iamVjdHOhF4AEgArSFQoaHaIb
+HIAFgAaACRAA0iAKISJfEBROU1RJRkZSZXByZXNlbnRhdGlvboAHgAhPEV+eTU0AKgAAVwh0qur/cajn
+/26n5f9vqef/cK3p/3Gt6/90ruz/da/t/3iz7f95te3/erXt/3207f9/tvD/f7bw/4C38f+BuPL/hLjx
+/4W48f+Hu/P/h7vz/4e78/+Gvfb/g8D6/4PA+v+Evfb/h73x/4y87f+Kv/D/ir/w/4q/8P+Kv/D/ir/w
+/4rC7P+JxO//h8L1/4rC+f+Nwfn/j8H5/4W++/+Fwf//kr3t/5K76/+Hvvj/ib3y/4m98v+JvfL/h7zx
+/4e88P+Du/P/grrz/4G48v+At/H/f7bw/3218P97tvL/erXx/3iz7v93se3/drDs/3aw6/91ruj/dK7o
+/3Su6P9zref/erDn/32y5/+AsOf/hbHq/4my7P+Qte//j7Hq/4ip4/+DpuL/faPh/3af3f9notv/Yp7a
+/12b2v9UlNb/TI7S/0GM0f88hs7/OIHK/zV9yP8xd8T/LnS//yxxvP96r+z/eK7r/3Ws6P91ruj/da/r
+/3aw7f95s+7/erTv/3u17/98ue3/frns/4K38P+DuPH/hLry/4W78/+Fu/X/ibzx/4q98f+Lv/L/i7/y
+/4q98v+PwPD/jrrl/46+7P+OwvP/isDy/4vA9f+OwvL/jsLy/47C8v+OwvL/jsLy/4zD9v+NwvP/ksLv
+/1l+nv8lPVX/a42v/5DE/v+Jwf7/lcDw/5W/7f+Mwfn/jMDy/4zA8v+MwPL/jMDy/4u/8P+HvfX/hrz1
+/4W78/+Fu/P/g7jx/4G48v9+ufL/fbfx/3u17/97te//erPs/3qz7P95sev/eLDq/3iw6P93r+f/cqvj
+/3Sr4/90qeX/eazn/32t6v+EsOv/iLHo/4Sw6P98qeX/dqXi/3Gh3v9vn93/aprc/2WY3P9cktv/VYzW
+/0WN0/8+idD/OYPM/zeAyv8zecb/MHbC/y50v/+BtO//f7Pt/3yw6/97sOr/erPs/3y07P9/te//gLbv
+/4G37P+Buez/g7vs/4a57f+Huu//iLvw/4q88f+LvfL/jb/x/46/8f+QwfP/j8Dy/5LE+f+GqtD/PE1h
+/09ogP+JsNT/lMb5/4vC+v+Sw/P/ksPz/5LD8/+Sw/P/ksPz/43D/v+Uw/f/iaXF/15uev9WX2D/NEFL
+/4my3/+Sx/7/l8Lx/5fB7/+Qw/n/kcLy/5HC8v+RwvL/kMHx/4/A8P+NvvP/jL7z/4q88f+KvPH/iLvw
+/4a68P+DuvH/g7rx/4G37/+Bt+3/f7Xs/3217f98tOz/e7Pr/3mw6P94r+f/c63o/3Kt6v9xquj/bafl
+/3Go5/9yqOP/dKnh/3Ss4/9xqeX/a6bi/2ih3v9roeD/ZZ7e/1+a3v9Zl93/UpDa/0aP1v9AjNP/PIbP
+/zmCzP81fMr/MnjF/zB2wv+It+3/hrbs/4O06v+Cter/gbjr/4K57P+Ft+//hbrs/4a77P+Hu+v/ir7s
+/4277P+Ove//j73v/5C/8P+RwPH/k8Dx/5XB8f+Ww/T/lcHy/5rI+v9feJT/am51/5ylr/90iJ3/jLTa
+/5bL+/+YxfH/mMXx/5jF8f+ZxvL/mcby/5TF/v+cwe3/mqi6/769v/+1raf/aWls/2F7l/+ezf7/mMPw
+/5zF8P+Vxvn/lsPw/5bD8P+Ww/D/lsPw/5XC7/+TwvL/ksHy/5DA8f+QwPH/j73v/4297/+Kve//ib3v
+/4e87f+Gu+z/hbrs/4C57f9/tuv/frXq/3206P98s+b/d6/r/3Wu6/9zrer/ca3o/26r5f9tqeP/bKfh
+/2mm4f9mpOH/YqHg/12e2/9Xn9r/U53Y/02a1/9Hltj/Q5PX/0GO0/9Ai9L/PYjQ/zmCzP82fsv/M3nG
+/zF3w/+Nt+z/ibbq/4a15/+GuOr/hbrr/4e77P+Lu+//i7vt/4y87P+Nv+v/j7/r/5K87P+Uv+//lL/v
+/5XA8P+WwfH/mcLx/5rD8f+cxvT/nMXy/5G86v9edI3/mpea/7Owsf+ttb//bYeg/57J9f+cxvT/nMb0
+/5zG9P+dx/X/ncf2/57N+/+KqMb/srfD/9DFyf+lnKD/iISJ/1pqgP+fzPr/m8f1/57H8v+ayPr/ncjx
+/53I8f+dyPH/m8bv/5vG7f+Zw/L/l8Ly/5bB8f+WwfH/lL/v/5K/7/+PwPD/jr/v/4297f+MvOz/irvs
+/4S78P+Eue3/g7fs/4G26/+Ater/frDq/3yv6v95r+f/dq/m/3Ku4/9vrOX/bajn/2qo5/9op+f/ZaXm
+/16g4P9Xndr/U5vX/0yW2v9HlNf/Q5DX/0KP1f9AjNP/PonS/zuF0P84gM3/NXzK/zN6xv+Ltuv/ibXq
+/4m26/+Kt+z/i7rt/4267f+Pu+3/kLzv/5K/7/+Sv/D/lMHw/5bB7f+Xwu//mcPw/5rF8f+axfH/m8T0
+/5/F7/+gx/H/nsj2/5e74/+Mmq7/lpOV/5uSkP+/vr//boCQ/4+y0v+mzfr/oMb0/6HH8f+kx/H/p8v0
+/5nE7P9+lK//0dHX/8O9uv+dj5L/p5Wa/4CCjv+Kqsr/otH+/57M9P+izPD/pMvy/6TL8v+kyfH/o8jw
+/6HH7/+dx/L/m8f0/5rF8f+axfH/mcPw/5bC8f+TwPL/kr7x/5G98P+Rve//j7vt/4u88P+Lu/D/ibrv
+/4e36/+Ftur/g7To/3+z5/98sub/erLn/3av5f9zrub/cKrn/22o5f9rp+b/Z6bl/2Sk4/9goN7/W53d
+/1ab3P9Sl9r/TpTa/0eS1v9DjtP/QIvQ/z2Iz/85g8//N4DJ/zZ+xf+Ktuv/jLfs/4647f+OuO3/kLvw
+/5G78P+TvO//lL3w/5W+8f+VwPP/mcHy/5vC7/+cw/D/ncXx/53F8f+exvT/nMj3/6LG7f+hxu//oMz7
+/5y53P+YoK7/hX6B/4d9e//Cvb3/kJ2p/26KpP+i0v//n87+/6DN+v+kzvv/qNH8/4uw0v+FkKf/4Njb
+/724q/+Zg4D/ooSE/7KrsP+LoLr/oM35/57O9f+my+v/psvx/6bL8f+my/H/psvx/6XK7/+gyPT/n8f0
+/57G8v+exvL/nMPw/5rD8v+XwfP/lsHz/5S+8f+UvfD/k7zw/4+98f+Nu+//jbvv/4u57P+Luez/hbjq
+/4K25/9+tOj/fLTq/3iw6P93r+f/dK3n/3Ks5v9tqeX/aafl/2em4/9iod7/XZ/d/1md2/9VmNr/UZbX
+/0yU1/9HkNP/QozP/z6Jz/86hs7/OILJ/ziAxP+Quuz/kbvt/5K87/+SvO//lL7x/5W+8P+WwO//l8Hv
+/5fB7/+ZwvD/msPx/53C7/+exfD/n8Tx/5/G8f+gx/T/n8n2/6XH7P+lyPD/n8v3/6G/4P+Ym6z/e3B1
+/29jZv+inKD/foKP/z9SZv+KteD/mcPw/5nB6/+Fq9H/U3SX/2Z8kP/ExM//6dzZ/8K4qv+KcWn/h2pm
+/8W/vv+nuM7/n8bq/6XO9f+nzfD/qM30/6jN9P+ozfT/p8zy/6fM8f+jyfT/ocj0/6DH8v+gxvL/nsXw
+/53F8f+bxPT/m8Xy/5fB7/+WwO3/lL/t/5C/8P+Pve//j7zt/4+87f+OvO3/i7rr/4e56/+Dtur/gbXo
+/36z6/98ser/eq/n/3eu5/9yrOb/b6nm/2yn4/9mpeH/YqHe/16f3P9anNv/VpjY/1GW1/9Mk9b/R47S
+/0OM0f8/ic//O4TK/zmCxv+TvOz/k7zs/5O87P+Vv+//lsDw/5nB8P+bwfD/m8Hw/5zC8P+dw/L/nsXx
+/57F7P+gxu//oMfv/6DH7/+hyPD/oMn1/6jI7P+oy+//pM35/6rG5f+jpLP/fnF6/1hOVv9aVl7/WVtm
+/05XZP9FVGb/RVNk/z9KW/85Q1H/Jy47/ysvM/+uo6b/8+Pe/9rPwv+Mc2v/e15Y/8/Iw//K1uT/pcTh
+/6nQ9P+ozfT/p8zy/6fM8v+nzPL/psvx/6bL8f+ly/T/pMvy/6PI8f+hyPD/oMfv/5/G8P+exPT/ncPy
+/5zC8f+bwe//mMDv/5XB8P+Uv+//k73t/5K87P+RvOv/jrvr/4y56v+Itur/hbbq/4K06v+As+j/frDn
+/3uu5v91qub/cqnl/2+n4v9sp+H/Z6Le/2Sg3v9gndz/XJva/1OW1v9Qk9X/S4/S/0aL0P9Chsz/PYTJ
+/zqDyP+Vu+r/lbvq/5W76v+Xvez/mL/t/5rA7/+cwe//nMHv/53C8P+ew/L/oMTx/6LG7P+kx+3/pcjv
+/6XI7/+lyPD/pMv1/6rK7P+rzPD/ps33/7HK6P+nq7f/aWRr/1xcY/9xdHz/m6Gr/2txeP9PTlP/PDs+
+/zk2OP9BPT7/XFVV/2BbWf9lW1r/18vI/+jl3P+Qe3f/gGZg/8/HvP/O1dz/r8bf/63N9P+ozff/qM71
+/6jO9f+nzfT/pszy/6fM8v+ozPL/qMzy/6bJ8P+myfD/pcjv/6LH8f+gxvT/n8Ty/5/E8v+ew/H/nMLw
+/5fC8P+Wwe//lcDt/5O96/+Tvev/kbvr/5C66v+Nt+r/ibbr/4W06P+Es+f/gbDn/3+v5v96rOX/danl
+/3Kn4/9vp+H/a6Le/2ag3P9intz/Xpva/1iY2P9Uldb/T5LT/0uN0v9Gic7/P4XK/zqEyf+Vu+r/lbvq
+/5W76v+Xvez/mL/t/5vA7f+dwez/ncHs/57C7f+fw/D/ocXw/6XH7f+myO//p8nw/6fI7/+nyfD/p8z0
+/63L7P+ry+//pcz2/6zG5f+QlKH/i4uT/5Sao/+ttL3/ucHI/3N5ff9YV1v/OTg6/yglKP82MjP/RkFC
+/2djX/+EeHf/mJKQ/9vb1v+Yiof/sJmU/9vRyP/c4eX/us/k/63N9P+mzfr/rM7y/6zO8v+szvL/qc3y
+/6jN9P+qzfT/qszy/6jL8f+oy/D/psjt/6XI7/+ix/H/ocbw/6DF7/+gxe//ncLt/5vC8f+awfD/mcHv
+/5W/7P+Uvev/lLvq/5K66P+Pt+r/jLbq/4i06v+Gs+j/hLLm/4Gu5v98rOP/eKnl/3Wo5f9yp+L/bqTg
+/2mh3f9lnd3/YZva/1yZ2P9Xltf/VJPT/06P0v9Kis7/RIfK/z2Eyf+XvOr/l7zq/5e86v+Yvev/m8Dt
+/5zB7f+ewu3/n8Pv/5/D7/+gxfD/osbx/6bG7f+nx+//qMjw/6jI8P+pyfL/qszx/67L6v+mzfD/o878
+/5202v+Ymq//2djl/9/e6//b3OT/0dLZ/7i6vv9eXF3/JCMj/yMiIv8nJib/LSss/0dCQf90bm3/cGpp
+/42Hhv/DvLv/zsbF/+zj4v/h4uX/kJ+v/42vzv+q1f//rs3t/7HO7/+xzu3/rs3w/6rO9P+tzfL/q8zx
+/6rL8P+pye//qMjt/6bH7P+ix+3/osfs/6HG6/+gxer/n8Tq/6HC8f+dwO//m8Dt/5nA7P+Wv+v/lLro
+/5O35v+Quej/j7nr/4q16v+Hs+f/hLLl/4Gv4/99reP/eqzj/3ep4/91p+H/cKTg/22i3f9pn9z/ZZza
+/16Z2/9altf/V5PT/1SPz/9Pisn/SofG/0WCxf+Yvev/mL3r/5i96/+av+z/nMHv/53C7/+fw+//oMXw
+/6DF8P+gxfD/osbx/6bG7f+nx+//qMjw/6jI8P+pyfL/qMz0/67L6v+nzO3/pM75/4GTtf+8vs7/6+zx
+/9/g5v/c3+D/5OXm/9ze3P9raWr/Hx0e/yMhIv8oJif/MzIz/0I/P/9cV1f/ZWFh/y4qKv9wa2z/ubGv
+/9vPy/+Si4r/f4SK/219kf+WtNL/rdP8/6rP+f+sz/b/rs70/6/P8v+tzfL/q8zx/6rL8P+qy/D/qcnv
+/6fI7/+kyO//pMjv/6LH7f+hxuv/oMXs/6LD8v+ewfD/nMHv/5rB7f+XwOz/lbvq/5S55/+Ruur/j7nr
+/4q16v+Hs+f/hLLl/4Gv4/99reP/eqzj/3ep4/91p+H/cKTe/22i3f9qoN3/Zp3b/1+a3P9bl9j/WJTV
+/1WQ0f9Qi8v/S4jJ/0aEyP+av+z/mr/s/5q/7P+cwe//ncLw/57D8P+gxfD/ocbx/6DF8P+hxvH/pMfx
+/6bG7f+nx+//qMjw/6jI8P+pyfH/p8z1/63M6/+u0fH/l8Dl/3uJpf/Jx9T/19jc/9HS1f/i5eT/6+7q
+/+fq5f+6t7j/REJD/yUjJP8qKCn/LSss/zo4Of9IRUb/RkRF/ykmJ/8TERL/Ozg2/4uDfv+glpH/pJ2c
+/6err/9seYj/i63U/67V//+o0fv/rM/2/7LO7/+tzPD/q8zx/6vM8f+rzPH/qsvw/6jL8P+my/H/pcrw
+/6TI7/+kyO3/ocbt/6LD8v+fwvH/ncLw/5rB7f+XwOz/lrzr/5W76P+Ruej/j7nr/4q16v+ItOj/hbPm
+/4Kw5f9+ruX/e63l/3iq5f92qOL/caXg/22i3v9qoN3/ZZzb/1+a3P9cmNr/WJTV/1aS0v9Sjc7/TInK
+/0eFyf+av+z/mr/s/5q/7P+cwe//ncLw/57D8P+gxfD/ocbx/6HG8f+ix/L/pMfy/6bG7f+oyPD/qMjw
+/6nJ8f+qy/L/qM33/67N7f+v0fD/lbjb/4aQqP+3s77/zs7V/8nJ0P/b29//7u/w/+Xn5//v7O3/yMXH
+/01LTf8jISL/JCMj/ygnKf8iISP/Hx8h/yUlJv8YGBr/EBAS/yspKv97c2//ppyW/721tP+trrT/WGl9
+/3mWtv+q0vz/rdP7/7LO8P+uzfH/rc3y/63N8v+tzfL/qsvw/6nL8f+my/H/pcrw/6XK8P+kyO3/osbv
+/6LD8v+fwvH/ncLw/5rB7f+XwOz/lrzr/5W76P+Ruej/j7nr/4q16v+ItOj/hbPn/4Ow5v9+r+X/e63l
+/3iq5f92qOL/caXh/22i3v9pn93/ZZzb/1+a3P9cmNr/WJTV/1aS0v9Tjc7/TInK/0eFyf+av+z/mr/s
+/5q/7P+cwe//ncLw/57D8P+gxfD/ocbx/6TI9P+kyPX/psn1/6fI8P+pyfH/qsvy/6vM9P+rzPT/qM/6
+/7DQ8P+v0fD/cZCv/0tQYv/UzNr/0dHg/87N2v/Q0dr/np+m/2FhZv+Pi47/y8nK/8TCxP+bmJr/NjQ1
+/ycmKv8kIyf/Pz5C/zo5Pv8hICT/ExUa/xYYHP9NSkr/mpCK/8K3s//Qycf/ioyT/0VWaf98nMP/rNH6
+/7LR8v+vzfH/rs70/67O9P+uzvT/rc3y/6nM8f+my/H/pcrw/6XK8P+kyO3/osbv/6LD8v+fwvH/ncLw
+/5rB7f+XwOz/lrzr/5W76P+Ruej/j7nr/4q16v+ItOj/hbPn/4Ow5v9+r+X/e63l/3iq5f92qOL/caXh
+/22i3v9pn93/ZZzb/1+a3P9cmNr/WJTV/1aS0v9Tjc7/TInK/0eFyf+avvD/mr7w/5q+8P+bwPH/nMLy
+/57D8v+gxPL/ocb0/6LH9f+kyPX/pcr3/6LN9/+mzfT/qczw/6vM8f+rzPX/qM7y/6zP9v+qxez/coKe
+/7G7x//m6uz/5+fp/+Dg4f+rq6z/VVVW/2pqbP+Jh5H/paSo/+Hh4v/k5d//rK6k/6Wmn/+en5v/sLKu
+/4aGhf8uLi7/FBMW/xMTFf8qKin/j4yG/9XQyP/Jwbb/ubCt/4WTo/9adJX/m7vi/7fO8P+zzfb/sc30
+/7LN7f+uzPH/qcz6/6nK9/+py+//psnw/6TJ8f+hyPL/n8fy/5zG9f+axPT/mcPy/5fC8f+VwO//lrvq
+/5S56P+Qt+j/jrbq/4m06P+Hs+f/hbDm/4Ku5f9/rub/fKzl/3iq5f9wqeL/babg/2qi4f9noeL/Y53h
+/1+Z3f9bl9v/VpTX/1CR1f9MjdD/RojM/0OEyv+VwOr/lcDq/5XA6v+Wwev/mcPt/5rF7P+cx+r/ncnr
+/57K7P+fy+3/ocvv/6nH8f+qyfH/qcny/6nL8f+qzfX/r8/s/7jS8f/C0/L/z9nv/+rv9f/r7Oz/8PDw
+/+zs7P/m5ub/4eHh/9PR1P/h3+r/9fP5/+rq6v/q6+X/7O7l/+/w5//s7ub/5ufi/+Li4f9tbW3/Ghoc
+/xkZHP8gICD/Yl9c/8vHwf+9ubP/sK+x/6Cmr/+FlKn/haLF/6fR/P+tzvv/rs31/67O7/+tzOz/q8nx
+/6vH8P+qyO3/qMfs/6XG7/+ixvD/oMTx/53E8v+bwvD/msHv/5a97P+VvOr/krrq/5C56/+Mt+v/ibbq
+/4W06v+Ds+j/gbDm/3+v5/97ruf/eKzn/3Wp4/92p9j/caPa/2yg2/9nnt7/Y5re/12X2v9alNb/VZPS
+/1COz/9Micn/Q4jI/zuHxv+Xvuj/l77o/5e+6P+Yv+v/msHs/5zC6/+exej/n8bq/5/G6v+gx+v/pMfs
+/6vD8P+pxfX/qMn3/6vM9P+ryOv/s8fc/8jX6P/e5/T/6eny//Lv8P/28vH/9PT0//b29v/09PT/8PDw
+/+3t7//x8Pb/7+/y/+3t7f/v7+v/8PDr//L07P/s7ub/6erk//Dv7f+/v7//PDxA/xwcIP8jIST/QDw7
+/6Gdmf+zsK3/nqet/6Gfn/+mpqn/bYOe/3qr3f+mz///p873/6PP8P+mze//qsjs/6rI7f+mx/D/pcbw
+/6HG8f+fxPT/ncPx/5rB8f+ZwfH/lr/v/5O76/+Suef/jLvt/4e57P+Dtur/gbbr/3206/98s+r/erDq
+/3ev6P90ruj/ca3o/2+r5/9vp+P/aaTi/2Sg4v9fnOX/XJnm/1eW4f9SlNv/To7W/0uLz/9FhMb/P4HC
+/zt/wP+Ktez/irXs/4q17P+Nt+//jrjw/5C67/+SvO3/k73v/5O97f+Uv+//lMDw/5TD8/+Vxvf/lL/t
+/3GJqP9bZHb/SlFc/3d+hv/R1tf/6enn//fy8f/29PL/9PT0//T09P/09PT/9PT0//T09P/x8fL/8PDw
+/+/v7//t7uz/8PDv/+/w6v/w8er/8PHs//Hx8P/x8fH/paWr/yMiKf8YFxv/REFC/2ZhX/+al5b/o6ir
+/7Otpv+9tbD/g5Ge/1Nzl/98osv/jb3j/47G8P+OxfD/lMHt/5TA7P+Pv+//jb3t/4q87/+HvO//hLvv
+/4O37f+Dt+3/gbbr/36z5/9+s+f/erHj/3au4P9yrOH/cKvi/2qn3v9npNz/ZqPc/2Oi2/9dndj/WpvX
+/1aa1/9Pl9z/TJHX/0uP0/9Kis//SYnO/02FyP9Jf77/Q3iy/0B0qv88bqH/O2WW/zxhkP9bpOL/W6Ti
+/1yk4v9epuX/YKjn/2Gq5f9kq+L/Zazj/2au5f9nr+b/aLHn/2qz5v9ztez/ZJO+/y09T/8hHCH/PT9J
+/2Nqb/+8wrz/5unk//Tx9P/18vb/9fX1//X19f/09PT/9PT0//T08v/y9PD/8vLx//Hx8f/w8PL/7Ozv
+/+vs5//r7ub/7O7n//X19P/29vf/4N7m/0JASv8lJCn/cW1x/1FMTf+EgHv/pKGZ/7u1rv+8ubT/mZyg
+/3R9iP88Wnb/RXKY/2yu4v9tsuv/ca7o/3Ou5f9vr+P/bK7i/2er4f9kquH/Y6fi/2Op4P9iqeD/Yabd
+/12j2/9cotj/YZ7S/2Oh1f9jo9r/YKLa/1aY0P9Pkcr/TY/I/0uOyP9IjMn/RovJ/0OJxv82gLj/Lm2i
+/zFrmv81ZI3/N2KH/0VggP9FWnf/PlJp/zZGWv8wPkz/MDhA/zQ4Of8wgLf/L4C2/y+Atf8vgrf/MIS5
+/zCGvf8xh7//MYi//zKJwv80i8P/NI3D/zaQwv81ksv/Ooe7/z84Wv9RMjj/JSEm/1paYP/Iycn/4uXk
+/+Xp5v/x8PH/+vH2//rz9//39Pb/9fL1//X09v/w7/L/6Obq//b19v/39vf/7+3t/+zp4v/t6+T/7+7n
+//Hx7//09PL/6err/15gY/9UVVb/iIaI/1RSU/9KR0b/hoOB/7e1tP+vrq//rq2v/6ypq/92eov/M0xl
+/zt8oP9AlMX/RZXQ/0aUy/9Ek8b/Q5LD/0GOv/9Ajb//QIy//0WMwP9JjsD/To+//1GPvf9Xkr7/Y5a/
+/2eYvv9voMj/c6TL/2iYvf9cjrf/V4y7/1aMuP9Rh7T/ToWv/0p/rP84YYn/I0FV/yM2PP8uNjb/MjMz
+/zMtKv8vKSb/KSQj/yAaGv8aFxP/HxsV/yYgFv8hZ5z/IGec/x5nmv8faZz/H2ue/yBupP8fcKf/IHGo
+/yByqf8hc6z/I3Ws/ypzrP8heLj/LIO4/0xLcP8+Kyr/PjUz/3hvcv/Kx8f/3+Df/+Do4f/s8O3/8fDx
+//Xy9P/29Pb/+vb5//n29//18vn/rqqw/52anP/v7uv/8O7q/+rl3v/s5uD/7evl/+/u6v/t7uv/19rX
+/3Bzcv9cXlz/fX19/15cXf9KRkj/b21u/6ShpP+2s7X/ura4/62rq/+NiYv/RFFd/zRgev9ChrL/PIzC
+/zmJvP87ibb/Ooi0/zuGsP89hK//Poaw/0GIwP9HisD/T46//1WNvP9ek8D/bZXC/3KVwP9/osz/g6XM
+/3uav/9rjLT/Yoe2/2KGsv9hhq//W4Go/1Z4n/9EWXX/JDM5/yUsJf8zMCf/Nysp/ywpJv8iIiL/Ghsh
+/xQXHf8OExf/FRcY/xwZGP8jaaD/Imif/yBon/8gap//IW2i/yJvp/8jcqr/JHKs/yV0rv8ndrD/KXiy
+/y12tf8oe73/MIG2/1x6lv8vLyz/RDky/35ybP/EvLb/0dLL/9zg3P/h7eb/5PPr/+vz7f/09fL/+/X1
+/9vS1P98d3v/Lios/ykmJv+1sK3/49/b/+Le1v/m4dr/6OXf/+zs6f/m5uT/yMnH/2xubf9lZWb/eHZ3
+/2RgYf9XUlP/ZWFg/4J9fP+sp6b/vLe3/7Svrv+YnJT/iI+S/1tmff9JZYv/SoGw/0qSxP9GkcP/RY/A
+/0CJuP9Aibf/P4e4/z2Fxf9CiMb/RonE/0eEv/9Qi8X/Wo3G/1eIvv9bjML/YpDF/1mGuP9Peaz/TXap
+/0x1p/9IcqH/QGmV/zlgiP8zUm//JkJT/ypDTf8yR1H/MkNT/yg9Uv8hN1L/HDFR/xsxUP8XL0r/Gi1C
+/x4rPv8haqL/IWui/yFspf8hbaX/InKo/yN0qv8ldq//Jnix/yh6tP8pfLX/KX+2/ySFu/8mhsT/MIC5
+/1mPsf9LUGD/TD8+/3RoZP+xpqP/z8XB/+Lb1//m5uD/6/Lq//Hw6//s4uH/ybi5/3doav8hHB//IBwc
+/zs2NP/DvLf/2tTP/93X0P/l4Nn/5eHb/+jn5P/d3tv/xMPC/3p6ev9jYWL/YV1e/1BKTP9QSUz/Z2Fe
+/5eRj/+xq6f/rKaj/6ihn/+lq5//qaaj/5OKlv9rb4b/Nk9q/zdmjP9OkMj/S5LL/0CMyf82h8b/NonJ
+/zmFxP85gcL/OYDC/zp+vv86fL3/Nn65/zR9tv80e7T/M3eu/y9ypv8ubaD/LWqc/yxomP8pZJL/JWKM
+/yRfif8nWon/J1uH/yVag/8kWIH/I1WD/yNRfP8jT37/I02A/yJLff8iSnT/H0hz/xxHdv8gb6f/IHCo
+/x9xqf8fc6r/IHat/yF4rv8kfLH/JH2y/yeAtv8ngbf/KYG3/yWEuf8mhsT/MH/E/zeXv/9NeZ7/KSUy
+/zcyOf9rYGT/emlq/7qin//PtLT/2L/C/93CxP/Cpar/y7O3/7Kbnv8uJyf/Rj8+/6SbmP/s4tz/1s7H
+/9LNxf/f2tT/5ODa/+Hh3v/h4d//uLe2/2poaf9QTE3/SkRG/z83Ov9ANzn/c2to/7Wsqv+7sa7/ubCt
+/720sv/AuLf/ubOu/7Crpf+qq6n/ipCX/zlGWf8vS2n/R3Sb/0SEuP88i8r/N4zQ/zeHw/82hcL/NoTC
+/zaCwv81f7//MX++/zF+vf8yfbv/MXu1/y93r/8tc6z/LXCo/ytupP8pbJ//KGuc/ydpmv8naqH/J2ef
+/ydmnv8mZJv/JmSW/yVfkP8lXZD/JVmR/yNViP8jVH3/IVJ8/x5Qf/8dcan/HnOs/x91rf8fdq7/IHmw
+/yB8sv8hfbL/In61/yWCuP8lg7n/J4K5/yt+t/8sgcL/L4TF/yGSu/83jrj/Ulpw/zIqNv8wHyf/Uzg+
+/554e/+mfYP/1Kmz/+rByv+ykZj/l3yC/1ZER/9gV1f/sKak//Dl4f/Yz8n/xr22/8rEvP/b1c//4d7X
+/93b1//Bvr3/bWpq/0NAQf9NSUr/Qj0+/y4nKf9JQEL/iX98/6qgnf+7sa3/xb25/9DIw//KvcT/wru7
+/7q7sP+ws6j/sKyo/5yWmf86PUP/Gycz/yVAWf8rVXn/NG6b/zWGu/81icT/MofG/zCCxP8xgcL/NH69
+/zV+vf81fLz/N3q7/zN2tf8xdLD/MXKu/zBwrP8wb6j/L26k/y5tnv8qbJz/Kmuc/yppnP8qaZj/KmeT
+/yZjkf8lYJH/JV2P/yNXhv8iVH3/IlF4/yNQdv8jdKn/JXaq/yZ4rf8nea7/KXux/yl+sv8qgLX/KoC1
+/yuBtv8sg7f/LYW5/zKNvv9Aj8P/QZXD/z6TvP9Hj7v/Zllz/4NXa/+gYnP/zYea/8iJm/+7i5n/o4GI
+/3RaYf9LPUH/T0hK/3p2dv/Rxbz/9+zi/97Uyv/Atq3/wrau/8/IwP/W0Mn/19HN/765tP9mYF//OjU1
+/zg0M/8vLCr/Hxwb/ysoJ/9aVFP/j4SA/6qgm/+/t7D/0MrD/9bRyf/Pzc3/yMXI/8XDxP+2s7X/rqus
+/6GgoP9oamr/ICMl/xcZHv8WFx//GiEs/xo+Wf8ybpr/OofA/zaHvf82hLL/M4Wq/zWFrf80fa7/MXqx
+/y58tf8tfK7/MHik/zF0p/8ycqX/MXGb/y9xkv8rcJH/K2yR/yptlP8obJb/J2qX/yRkkv8kYY//I12M
+/yNZiP8hVIb/IVGB/yFRf/9Chaz/RIeu/0aJsP9GirH/SY21/0yOt/9PkLn/T5C7/1SWwP9ansj/YqXO
+/3Cq0f94stX/eLrW/36ryv97fqj/g1h4/6ZviP/FiZr/4q66/5l4gP9iTFD/TDk9/11OUP+Sh4b/wbu5
+//Du6f/57+D/4djJ/7+4qP/Du6z/0cm6/9LLxP/Vz8n/o52Z/15YV/86NTX/ODI0/zcyMv8hHh7/JiEi
+/zgyM/9vaWj/ppuZ/8O4tf/QyMT/1tHL/9va0//b2dn/3dvc/8jFx/+al5n/a2lq/1lZWP8+QED/ICIl
+/xARFv8OEhj/EhIa/xcPFv8YHiv/HTVG/ydOW/80YWn/M2Fu/zVkdf88b4n/PHmX/zJ8nv8wfJ7/MXuf
+/zB5ov8wdp//L3SW/y9ykP8ucJD/LW2R/y1tkv8rapH/KmiQ/yZij/8lXov/I1yJ/yJYhf8hVIP/IFJ9
+/yFTfP99qMH/fanC/3+sxP+ArMT/f6zD/4KqxP+Iq8b/iKvI/42yzv+Yvdr/oMHf/7DF3/+xzOD/qs7a
+/665yP+bb47/i1R1/5Zke/+2ipb/eV5i/2heXf9iW1z/eW9x/93S0///9vL/8ezk/9rVyv/Y08P/0c29
+/87Iuf/Uzr7/2NPD/8nDvf+Si4j/TEdG/zs2N/8uKSv/JyIk/ykiI/82MDD/OzU1/1ZOTv+JgIH/qZ+e
+/8S8uv/V0Mv/2dbQ/9zc1v/g39//4N3f/8TCw/+tq6z/jIqL/2VjZf9LSk3/MjE1/xYXGv8PERb/EhMW
+/xcUE/8TFBb/EBMZ/xATGv8VFhz/IyMn/ysuNP8sNUH/L0VT/zZda/87do//MHqk/yx5pP8reaX/KnOd
+/ypvlv8sb5z/K2uY/ylolP8qaJT/LGiW/zRokP86bJP/PXCX/zNli/8sXYP/LlyA/zFegP+pws7/p8DL
+/6S8yf+kvMn/orrH/6S6x/+nt8f/o7TD/6u8yv+5ytr/u8zc/8LL2v/Izdv/u87R/7jDxf+pkp3/mmGB
+/5xlgP97UFz/akhO/517g/+4oqj/2tXW/+ff3P/g1M7/3M7E/9jNwf/m4df/6ubc/9rVy//Sz8X/z8zC
+/5+alv9AOzr/KCMk/yUgI/8pJSr/Misv/0lAQf9gVlf/aV9g/350df+dk5T/qqSj/8K8u//Qz83/2dnW
+/9zc2v/h3+D/3dvc/8PBwv+mpKX/fHp7/1dUV/9DP0X/Ly4y/xkZG/8QERP/ERYW/w4YGP8RFxr/FBYa
+/xcUHP8cFCD/JRwi/zMoLv8yKDD/Liwz/zA3PP87VWT/QHSW/zx5nf8+gKj/RoOq/z9ymv86b5z/RHik
+/0x+qP9YhrH/Z5O//3CRtP9tja7/aYqp/1+Bof9cgqD/ZIik/2eHo//Dz9X/vMjO/7TBx/+yvsT/sr3D
+/624v/+lr7X/naeu/6mzuP+4wsj/uMTL/7TEzv/Dw9D/tMDD/6C6tf+csKn/n6Wt/6Gmqf+cpJ3/rLOo
+/7u9tv+8u7v/vri8/7etrP+1paD/w66k/+vXzf/s6eb/6+fl/+Lf3P/c19X/z8rI/3Fra/88Nzf/VE5Q
+/1xVWv9cVV3/cmht/3xxc/+IfH3/h3t8/5iMj/+4ra//yMHB/9LOzv/R0M//2dnX/97f3P/h39//3Nrb
+/8G+vv+Oi4v/XFpb/01JTf88Nz3/Lywv/xoaG/8RERH/FBUU/xYSF/8WEhb/FhUX/xQXGv8RGBz/Fhwh
+/ykrMP8uKzD/Liwu/zI0M/83Oz//RFBf/3WSpf+fxdz/oL7W/56yzP+VsM//n7fV/6e61v+lssz/nqjB
+/5WevP+Ml7X/gpCt/32Pq/96kKv/hJiw/4yasP/CzdH/vMfK/7XAxP+yvcH/rrm9/6mztv+hrK7/mqWn
+/6OusP+qtLb/q7e6/6S2tv+nuLj/o7W1/5qtrP+Wqaf/k6un/5SvqP+Wsav/lbCp/5awqP+br7X/q7LC
+/7Owtf+yqab/v7u2/9na1//q6uf/7e7r/+Xk4v/h4N//ycjF/5GPi/+cmZX/lpGO/5CIhv+Sh4b/opqY
+/5yWk/+LhYP/e3Vz/6ijn//Bu7n/zMrO/9DO0P/W1Nb/19bZ/9nX2v/d19b/z8nF/8O9uv+xrKj/jIeE
+/3Rua/9eVlP/OjQz/yQgIP8ZFxf/GRga/xcWF/8SERP/FRQW/xgYHP8aGh7/GRke/yQkKf8uLTL/KSgt
+/y4uMv8yMTb/ODhA/1JYZP+ruMj/u83i/7HC2/+uutv/q7bW/6q11f+mstH/oKvJ/5ajxP+Pnb7/h5e3
+/4GQsP93hqb/dIOj/3eGpv+/x9X/vcbU/7zG0/+8xdH/tr/N/7K8x/+vuMP/rrfC/6+4w/+vuMP/rbjB
+/6q6wv+ru8P/rbzE/6u7w/+mtr3/pbbI/6m7zP+rvdD/qbrO/6y+0P+tvtH/q7PD/7Cxuv+9urr/xMO/
+/9bX1v/m5uT/5+fl/+Tk4f/n5+X/4uLg/9zb1//f3Nf/vLe0/7Otqv+qoZ//opuZ/4N/e/9taWb/pZ+c
+/8jDwP/V0M7/0czO/9DLzf/Uz9D/zsrL/87Ky/+/urf/vbe0/8W/vP/Bu7f/tK6r/5OMif9uZmP/Qz07
+/ykmJf8aGBn/FxYY/xcXFv8jIyP/Kior/xwcH/8XFxv/Ghkd/xoZHf8qKS7/MzI4/zk4Pv87O0H/Pz9H
+/zM3QP9CSVX/d4KU/6Cwx/+arMz/mKnJ/5Okxf+Mnb3/hZe2/4CRs/96i6z/dIan/3SFpv9sfZ3/ZnaW
+/2V1lf/ByN3/wcjd/8PL4P/GzeH/wsrf/8LK3//EzOH/yNDk/8PL4P/ByN3/vcba/73K3P+/y93/w9Di
+/8bS5f/Cz+H/xdLn/8fW6//J1+3/yNfs/8nY7f/M2O3/srrO/6Kntf+wsbj/vby//9LQ0P/g4N3/39/c
+/+Xl4v/m5uT/5ubk/+Ll3//m6OH/5eLf/9/a1v+4s7D/d3Nw/3Nwbf+9urX/3NfU/+He2f/Z1dH/zMfF
+/8O9vP+/u7j/t7Ow/7Svrv+zrar/urSw/7GsqP/Bu7f/vri1/6Wem/92bmv/Pjk2/yomJv8cGhv/FxYX
+/yAfHf9IRkX/XFpb/zIwM/8gHiL/GBcc/xcWGv8iISb/NDM5/zg3PP85OT7/OTlA/y0uNf8nKzP/MzhC
+/3d+iv+Rkpz/jI2Z/4mLlv+Fh5H/fX6J/3p7iP94eIX/cHB8/2treP9xcn3/bm56/2trd//N1ur/zNPn
+/8rS5//N1Or/z9fs/9DY7P/P1+//0Njw/83U6//O1uz/0dnw/9Pc8f/T2vH/1N30/9bf9v/Y3/f/2OPw
+/9fl7f/Z5vD/2Obv/9Xk6//Z4/L/09z0/5ykuv+do7P/urvC/8nHyP/U1NH/1tbU/93e2//i4uD/4uLg
+/+Hl3//l6eH/6+vm/+Xk3v+blpP/ioiE/9ve1v/k5d//39/Z/9PTzf/KycT/yL+8/7evrP+1rav/tKyo
+/7Krp/+0rar/t7Gu/7u1sv/Dvbr/xb+8/7Cppv94cG3/OzUz/yYjIv8eHB3/HBsc/zQxLv9sZ2X/ko6M
+/3Brbf9APED/HBsg/xUUGf8aGh7/Kyov/zk3PP85OT7/PD1B/zU2Ov8wMTb/Li80/1lWWf+ahHb/l4J0
+/5R9cf+Md2v/g25i/4VuZP+GbWT/emBZ/25WTv94YFf/c1xS/3JbT//N1uX/zNXk/8nS4f/M1eT/ztfm
+/87W5//P1uv/z9fs/87U6v/O1Or/0djt/9Xc8f/V3PH/1dzx/9bd8v/W3vT/1t3w/9bd8P/Y3/H/1d3v
+/9Tc7f/T2O3/1N32/6691f9veYz/o6Ou/87Iyv/R09D/2dnW/9bX1f/X2db/4ODf/+Ho4f/m6+T/6+7n
+/9zc1v/Rz8r/5+bi/+Tm4P/g4dv/09TO/8XHwf+/v7n/t66r/66lov+0q6f/tq2q/7+1sv+0rqv/u7Wy
+/8S+u//LxcL/xb+8/6ykoP9+dnP/VU9N/zIuLv8nJSb/JiUm/1hTT/+SjIn/qqSj/5yWl/9VT1L/GRcc
+/xcXHP8YFxz/IB8k/zg3PP84Nzz/Ojk//zg3O/8xLzP/MC4y/0Q/Pv+Mdmb/jnlp/455af+KdGX/gGtb
+/39mXP+GbWP/hGtg/3hfVP94X1T/fGNV/4FpV//CyuH/wMff/73D3P+9xdz/wMbd/7zI3/+3y+H/uMvh
+/7TH3f+3yuD/us3l/7/N6/+/zer/v87o/7zM5f+8zOT/usjh/7vI4v+8yuL/usfg/7nG4P+6w93/usDc
+/6241P+CjKH/foSP/8G/w//Kx8L/yMTA/87Jwv/Z1cv/39vQ/+Xl3//i5N//39/a/+Ti3v/l5N//4d/a
+/9nW0P/HxsD/t7aw/7q3s/+urKb/sqmk/7Sspv+5sqv/wLmz/761r/+wq6b/tK6r/8bBvf/Dvbr/urWy
+/6Wemv+IgHr/W1FQ/z84N/8tJif/Miws/15VUf+kn5n/tLOr/62no/9vZ2T/Hhob/xoXGv8ZFxn/HBwg
+/y8uM/81Njn/MzQ2/zAwM/8sLC7/NTI1/zw3OP93aV7/g3Fk/4lzZ/+Pe3L/hHJt/4p1af+JdGf/gG1i
+/31rYf94Z17/e2ld/3toWP+Zq9D/mKrO/5any/+XqM7/mKrP/5qrzv+bq8v/m6vL/5yszP+gr9D/pLPU
+/6m00f+ptND/qbTM/6e0yv+mssj/p7LE/6mzxP+rtsf/rbjJ/624yf+vt8j/srbJ/6awxP+krr7/o6mz
+/6ytsP+4s6//trCr/7ezq/+3s6j/ycW2/9/e1v/h4Nv/5OLe/+jn4v/h4Nv/zMnD/7axp/+hm5L/mJKK
+/5+Zkf+lnpb/tq6n/763r/++tq//ubKr/7OspP+nop3/qaSi/7u1sv/CvLn/t7Gu/6mjnv+Yj4n/eG5s
+/1VKS/85MTL/RTs7/4uBe//Dvbb/yMnA/7WvqP+OhH//OTIz/x0aGv8aFxr/Ghod/yopLv8vMDP/MTIz
+/zIyM/8tLC7/Mi4y/zYyNP9JQz7/dWdf/4t1a/+agHj/kHt2/5N/cv+MeGz/jXpu/498cf98a2H/f25i
+/3xpXP+Zqsj/l6nG/5aoxP+aq8n/mqzK/6Crx/+nqsP/pqrD/6aqw/+orMX/ra/J/7SwxP+0scL/s7HB
+/7Syvv+zsbv/t7a8/7q3vP+7uL3/uri9/7u5vv+7u73/vLy//660vP+rs7v/q7G1/7W2t/+3tLT/tK+u
+/7i1sv/Ewbv/1NDJ/+Df2f/k4t7/5eTf/+Hg2//LzMf/q6ae/5yTh/+dlIj/l4+D/5uShv+poZX/u7Os
+/7uzrP+4sKr/tKyl/6aemP+qpaD/s62q/723tP/Bu7f/tK6r/66nov+onpn/jYOB/1JJSP9GPT7/SD8/
+/5GGgf/Mx8D/ysvB/8K8tf+flI//KyUm/xwZGv8bGBv/IB8j/ywrMP8xMjX/MjM1/zAwMv8oKCr/MS4x
+/zMwNP8vLjL/U0pI/5N/d/+ZhHn/iHNq/4d3bv+Bc2r/jXxy/5GAdf9/bWL/hXJn/3tqYP+tqK3/qqWr
+/6eip/+tqK3/r6qv/7Gtrv+0r6z/tK+s/7Wwrv+2sa7/t7Gv/7yvtv++srb/vLCx/7yxr/+/tbD/w7q0
+/8S6tf/Eu7X/xry3/8m+uv/Lwbr/ycK8/7q7vP+yt73/r7S6/7i4vv+7uL3/wb7B/8vJyf/T09D/19bT
+/+Hg2//k4t7/5OLe/93c1//Z2dT/1dHK/9fQxP/c1sr/1M7C/8bAtf+wqp//p5+Z/5+Ykf+gmZL/nJSO
+/5yUjv+wqab/trCt/7exrv+3sa7/s62q/66mov+soZz/hXp4/1dNTf9FPD3/WU5P/6GWkf/KxL3/0NDH
+/8vGvv+VioX/KyUm/x4aG/8bGBv/IyEm/zEwNf8yMjb/LzAy/zEyM/8mJij/Kygr/zQxNf82NTz/dm5v
+/6malP+jkor/jYB3/4h9eP9+cm3/hnZu/4Vzaf+EcWT/eWhc/2xfV/+zpZ3/r6Ga/62fmP+ypJz/uqyk
+/7+vp/+/r6f/v6+n/76vp/++rqb/vq+m/72yqP+/tKr/vrOn/7yyov+7sZ//vrSr/8S6sv/Kwbn/y8G5
+/8m+tv/KvLP/x7qy/765vf+2t8P/sbLC/7i3xf+7ucH/w8LJ/8vKz//T09T/1dbW/93b2f/g39r/397Z
+/93c1//k4t7/6unl/+zs6f/x8e7/9PPv//Lz7//m5eD/ycG5/5CIgf99dW//i4R+/56Vj/+qpaL/urSw
+/723tP++uLb/ta+s/62loP+Xjoj/c2ln/1hOTf9KQUL/Zlxd/6ugm//QzMP/1dXL/8S+t/+Ge3f/Lykq
+/xsXGP8fHB7/KScr/zIwNv8yMzb/MzQ1/y4uL/8tLS7/NTI1/zQvM/8yLDH/fXJz/6ugnf/Fvrv/w8TE
+/7awr/+QhoP/in13/49/dP+GcWL/dmNZ/1lLR/+3qaD/tqif/7Omnf+xpZz/vbCn/8Cvp/+6pZ7/t6Gb
+/7mknf+9p6D/v6qj/7yxov+/s6P/wLSi/76xnP+2qpT/r6OY/7aqn/++s6f/v7Oo/7esoP+1pZv/saGc
+/66orP+1tsH/s7bC/7e5w/++vMX/xcTN/8TDyv/Jycr/1dXW/9nZ1P/c3Nb/39/Z/+Ti3v/n6OD/6+zp
+/+/z8f/z9vT/8/b1//P29f/u7+3/5+Le/8nDvv+no5z/oZyV/52WkP+hnJb/tK6q/7awrP+0rqr/p6Kd
+/5iRjf+GfHf/a2Jf/0hAPf9bUVH/n5ST/7uxrP/SzsX/1NLJ/8nCu/90aWX/Hhkb/xkWGP8jIST/KScr
+/ywqL/8sLTD/Kysu/ykpK/8sKiz/Mi4x/zArLf83LzH/YVZU/35zb/+rp6T/yM3O/9PT1P/KxcX/taum
+/5GEe/9qWk//VUg//0xEP/+2o5T/rpyN/6SShP+vnY7/w7Ci/8Swn/+2o47/rpqG/6mVgv+xnor/wK2a
+/7+voP+/r6D/wLGe/8Ovnv+8qZb/s6ST/7Wllf+4qZn/xLSl/8W1pf+9rJ7/rqCb/6ypqP+yt7v/r7q7
+/7K6u/++vMT/wb/F/8XFyf/Ozs3/zs7O/9HTzf/Z2tP/3+DZ/+Lk3P/p6uH/7Ozn//Dw7f/x8e//9PTx
+//Ly8P/v8O3/5+nn/9bW1P+7u7b/tbKs/7Wvqv+wqqP/sauk/7uzrP+0rab/pJ2V/5CHgv90a2b/YlpV
+/11UTv9wZ2L/u7Kr/87Mwv/W0Mn/1s/I/7uwq/9QRkL/FRIV/xYUF/8gHyP/JCEm/yspLv8nJSr/IyEm
+/yMfI/8pJSb/Ni8w/z01Nf9GPzv/cWVf/3RoXf+spJr/ycfA/8vNy//Nzcv/zcvI/8G7t/+Ig37/aGFZ
+/35zaP+xn5H/qZiJ/6GQgv+vnY//xbOk/8u5qP/PvKj/y7el/8GunP++q5n/zLmn/8q2pP/DsZ7/vKqZ
+/7Wjk/+9q5r/x7eq/8a2qv/EtKb/zL2v/9PDtv/Mv6//ubKl/7SzsP+vtr7/rrXB/7K1v/+3tr3/u7nB
+/8HBxP/Dw8P/yMjI/9DRzf/X2dP/3t/Z/+Lk3v/p6uT/6+zn/+/v7P/w8O3/8vLw//Hx7//v7+v/5ubi
+/9TTzv+/vbf/xcG5/8S+tv+5sKr/tKul/7CnoP+qopv/lo6H/3x0b/9ZUEz/XVRP/2phXP98c27/ubCr
+/9LPx//W0Mn/z8jB/5KJg/8xKSb/FxMU/xwYG/8jHyL/JyQm/ywpKv8qJyr/JyQn/y4qLP9AOjn/RD08
+/z00M/9gVVH/iXpy/4t8cP+2rJ//ysa8/87Jvv/LyL3/xca9/8TEvv+ztrH/lI6H/5F7c/+1o5T/uKaY
+/8a0pf/PvK3/zbqs/8u5qP/Nvav/x7il/8a2pP+8rJv/xLKg/9e8qv/Uvav/vqqa/7Gfkf+/rqL/z760
+/9LCtv/NvbP/zb2z/8y8sP/LvrL/x8O5/7e7u/+ttb7/rbK//7Cxvv+0srr/tLK6/7i4vP/BwcH/yMjI
+/9DQzv/W1tT/29vZ/+Dh3f/n5+X/7Ozp/+3u6//w8O3/8vLw//Dw7f/k5OD/2dfT/8nHwP/Bu7T/xb+1
+/8W8sP+7sKr/pZuW/5qQiv+Mgn7/bmVg/1hPS/9bUk3/XlVQ/2tiXf+Mgn7/vLOt/87Kwv/Ry8T/xsC5
+/25lYP8lHhv/HBcX/yIeH/8rJij/LSkq/y4pKv8vKyz/NjEz/0ZAQP9UTEv/TkRD/1ZLSf+YiIH/kH1x
+/5N/cP+rnY//wres/8S7q//Du6v/wr+w/8PFuv+6v7f/rq2l/6CZi//Rvq//y7mq/8WzpP/Kt6j/xbOk
+/7+un//DtKX/v7Gi/8a3qP/Ftqf/yben/7+fjP+yl4b/l4Jz/6COhP/Lu7L/yriw/7ypov+ci4P/kIB5
+/6qYkf/AtrD/w8PE/7O6vv+str7/qrC3/6ussf+urbT/rq2z/7CvtP+8vL3/ycnJ/87Ozv/T09P/2dnZ
+/9/f3//m5ub/6+vq/+3u6//w8O3/8fHv/+/v7P/g39z/1dHL/8O9tv+4sKf/vbSo/7+2qv+8r6v/qZyZ
+/52Qi/9yZmP/ST06/0Q6Nv9qYVz/bmVg/4V7dv+toZ3/yL65/9DNxP/Iw7v/lpCJ/z01MP8sJCD/KCEg
+/y0mJv8xKir/OTIz/z43N/9AOTr/R0FB/1FKSf9QR0X/VElH/4x9ef+3pJj/spuK/66Vg/+qmYf/o5iK
+/5yShv+MgnX/i4J2/4h+cv+Sh3v/ioR4/5GPgf/RwLD/x7an/7Wklf/Ar6D/ybeo/8Ozpf/KvK//ybuu
+/8q8r/++sqT/qpqM/5F0YP+WfGr/lX9w/6uakP/Ftq3/o5ON/4Z2cf91aGP/dmlk/6udlv++t7b/ub7I
+/6y1vv+rtbz/pq6u/6Okov+npq3/pqWs/62tsf+6u7v/wcLB/8nJy//Q0NP/1tbZ/93d3//l5eb/6urq
+/+3u6//w8O3/8PDt/+vr6f/d3Nr/1M/I/8zHwP/FvbT/rqWa/7Spnf+/sKz/s6Sg/4d4df9LPzz/Qzc0
+/05EQf9tZF//l46I/6mgmv/Eu7T/z8fA/8zIwP+Tjoj/SUM+/zMsKf8yKSb/NzAu/z03Nv8/OTj/S0RC
+/0pEQv9OR0b/Vk1N/09GRf9dUU//fG5q/4Z2b/+kkIH/xauZ/76kj/+finj/bWBR/05EPP9WSkP/Y1NK
+/2RTR/+IcmL/loJ0/3dnXv+tpZT/qKGR/6Wcj/+poZP/tauf/7iup/+9sa7/tKmk/7etpf+WjoT/hn1w
+/5KEeP+bj4P/ppqR/6KZkf+fmJD/nZec/5qWnv+gpaz/q7K8/6y7xP+pt8L/p7S+/6ewuP+nrbH/paer
+/5ybnP+gnqX/pKKs/6iqtv+zt7z/u8K+/8HHyf/Jz9H/1NfX/9ze2//l5eH/7Ovn/+zs6v/v7+z/6enm
+/+Hh3//b29n/297W/9XVz//OycL/t6+n/6idlf+wpaL/rqKi/15UUv9IPz3/U0pJ/2ZcWf+Kfnr/v7Wu
+/8O/tP/OzcD/yMe5/6GZk/9ORUP/Ni4u/zoxNf87MTj/PDY6/0A7Pv9HQUL/TUdG/1JNSv9aUVD/VktL
+/2ZbWP+ShHz/mYl//6mWh/+6o4r/s5yG/6uUgP+okX//kHlq/4FwY/+Hdmn/eGhb/2pbTv96al3/gHBh
+/457a/9ZUEv/XFNN/15VUP9dVE//YFdS/29lY/9yZ2f/b2Rk/3BmYf93bmj/enJt/4R9hP+CfIT/hoGL
+/4iGkv+Skp3/qamx/7Ozvf+ssLr/p7G8/6Cuuv+grbf/oauz/6Gorv+foaT/mpqZ/5mVkv+Zl5r/paOs
+/6Wksf+sr7b/tLu7/73Dxf/Gy87/z9PT/9fZ1//g4Nz/6unl/+/v7f/w8O3/6+vp/+Tk4f/d3tr/3+Hb
+/+Hg2v/W08v/zMS7/6idlf+OhYD/enFs/2BWUv9uZWD/g3l1/5OLhf+fm5H/xL+0/8nAtv/Mwrr/n5SO
+/1RKSP8+NTT/QTg5/z0zN/9GPEH/SkJF/0xER/9ZUVH/XFRS/1pST/9XTUr/cWZe/5SHfv+llYf/vq2Z
+/72qlP+wm4T/qJN+/6SQe/+jjn3/n4p6/4d2af+Le27/mol7/2NUSP9yYlb/h3Nk/4p0Yf9gVVj/VktO
+/0xDRP9QR0b/WE5N/1ZLS/9hVFT/c2Zl/5WIhP+jlZD/vLGr/8/Q0f/f3eH/4ubp/9/i6f/IztX/sLW6
+/6qutP+lrbP/oquz/5ynsP+dp67/naOo/52fo/+ampn/kY2I/4WBe/+HhoX/nJui/52eqf+jp7D/rLG1
+/7a8v/++xMf/yc7N/9bX1v/g4Nz/6url//Dw7f/w8O3/8vLw//Dw7f/q6uf/4eTe/+bl3//i3tb/3NTK
+/6eclP91bGX/gHdw/5SKg/+OhX7/tKqi/765rv+1tab/wryw/7ywqv+Ofnv/Tj9A/zwzM/87MjL/SUBB
+/0lAQf9KQUL/UkhK/1lPUP9bUE//YVhW/1xTTv9lW1P/iHlt/6CSgv+ol4P/qJiA/6mYfv+um4b/taKO
+/66biP+jkH//p5OF/5yKfP+gj4H/nYt+/5WEdv+QgHP/mIVz/5V+aP9kWWL/Y1he/2BXWP9eVFH/aWFa
+/4V6c/+mlo//ybqv/9PEuf/QwbP/3M69/+Peyf/r5dP/7+3a/+rp2v/m6Nf/ubu0/66vq/+rq6n/paWm
+/6KjpP+go6b/oKGk/5+enf+dmJP/kIeB/3hxav9tbWn/joyQ/5OVnv+TlqH/naGr/7C1uv/Hzc//3+Ti
+/+nq6f/w8Oz/8vPv//Hx7//y8vD/9PTx//T08f/y8+//5+rk/+Xl3//j39n/4NjO/6ugmv99dWz/lY2D
+/7Kqnv+4r6X/vbSq/8C5qv+7s6T/mJCF/2xhXP9LPz7/QjU4/z82Of9DOTz/RTw8/0c+Pf9IPz3/WU5O
+/1tQUf9fVFL/QDcz/zcvKv9HPDX/fm9k/56Nf/+3pJH/xK+Z/8Grk/+yoY3/s6GO/7Gejv+ploj/opCE
+/52Lf/+Xhnj/oZCC/6iWiP+cin7/mol5/5SBb/9wY2v/aV9j/3Ztav+KgXn/qKGT/8q/rv/WxrX/3c67
+/9LDrv/Txa3/4dG5/+LLuf/o1cT/7NvL//Dh1P/y5Nb/0c6+/6ajlf+clYv/mJGK/5KJhP+Yk5L/lpeX
+/5WRj/+Ui4X/gXZu/3FoXf9OT0f/aGhq/5KRnv+TlqT/s7fD/9TY3//k6uz/6/Dv//Dx8P/x8e7/8vHu
+//Ly8P/09PH/9fXy//X18v/09vH/8PPs/+nn4f/g29T/0Mi+/6GWj/+TiYD/rqWZ/7uypv+2raL/saqe
+/5+Shf+Hdmn/aVxT/0k/O/8/Nzf/QDg7/z82O/8+NTn/Pzc4/0k/P/9aUk7/WU1N/0o+Pv8jGhj/GRAN
+/yYdGP83Kyb/Rjcy/2NSSv+RfXD/spuK/7Odif+zo4//tqWT/66ejv+pmYv/qpmO/6KRhP+hkIL/n46A
+/6GQgv+hkIL/mIl7/42Bdf94b2j/npKJ/7eonP+4ppX/xK+c/9TApv/Qup3/1MCk/9XCpv/ezbD/4tK3
+/97Jtv/fyLb/38Sw/9i8pP/Utp7/2Mar/5mLd/+GdWz/dmdi/1lKRv90amT/dnBt/4eBff+MhoP/ioaE
+/5CLif+SkJH/qKep/9nX3P/n5uv/7e3y/+/w8P/s7+z/8vLx//T08f/y8vD/8fTw//H37//y9fH/9PT0
+//X09P/09PX/8PXx/+vs5//g39n/ycK8/6eemP+3tKj/u7mr/6yjlf+Vhnn/fGpc/2FTSv9LRUH/Rj89
+/zkzM/85NDf/QTs+/0c/P/9HPjr/W01F/5qHeP+ok3//o4x9/2JOQf9FMyf/ZFBC/21ZSv9lUkb/YlFJ
+/21cUP+MeWr/m4h2/5+Mef+2o5L/sJ6N/6qbiP+nmob/p5uF/6mYh/+mk4X/moh7/4d1av+Kd27/iXds
+/4Z1aP/AuKv/wrWo/8W1pf+9qpb/xKyW/8ezm/++r5X/0sOt/9zPuv/c0r3/3dC8/97Dqv++pIz/waWO
+/6eOdf+kiXH/uaiQ/35wYf9sYFr/cWRj/5GHgv+qopv/ysK7/+HZ1P/m4d7/8e3s//r39//8+/z/+/r7
+//Tx8v/08fH/8O3v//Dt7P/y8+//8vLw//Ly8P/y8vD/8fTw//H37//y9fH/9PTx//X08f/28vL/8fXw
+/+/v5//l4dr/4dfP/9XKwf/Dt6z/m4+C/3hqW/9/bl7/mIRy/7Chkv+Vjof/Vk5K/zoyMP9GPj3/RT08
+/zgxLv9QRj//jn5w/6OPff+vl3//u6ON/7adif+mjnr/ool3/2pVRP92YVL/hnNp/457bv+olYX/nox5
+/3VjU/+Gcmf/i3ht/5ODdP+ZjXv/lYp3/5mHef+ah3r/iHRo/3BeUv9cS0L/cmBU/3tpWv/Uyr7/0MO3
+/8u7rP+1oY7/wquV/8avmf/PuqH/18Kr/8a1nv/GtqL/3sy1/8Okhv+fg2r/p412/6GNeP+3o5D/opmI
+/4Z+dP/Evbr/4tzb/+zq5P/w7OL/9ezi//Hq4v/x7uf/8e7q/+3u6f/x7+3/8vHv//Lx8P/y8e//8vHv
+//Hw7v/y8vD/9fXy//Ly8P/y8vD/8vTw//L18f/09PD/9fTv//by7v/38+z/+fXr//Xw5f/r4NX/5NbK
+/9fFuv+iiXr/kHdo/8Ssmv/LuKL/0cKp/8a5o//SwrP/ybmr/6eXjv+jlIv/mImD/3tvav+Mf3b/s6SV
+/8Wynv/Hspz/xq+b/8Ksmf+/p5T/qZKB/2tXR/9EMij/Tj41/3hmWf+olYX/ppOB/5eEc/9qWFD/ZVNN
+/29fWf9zZV7/gnVv/4Z0a/+NeW//h3Ro/4h1af9gT0L/Xk1B/2taTf/s49b/6dzP/+LSwf/NuaX/18Cr
+/9S4nf/fvJz/17aY/5yBZv+hh27/yq6V/72kjf+ijXf/opB+/7Cfkf+zpZb/0ci6/+DZz//l39v/5ODb
+/97e0f/l4dT/5t7R/+ri2f/q5t7/6ubg/+np4v/s6+b/7ezn/+3s5//t7Of/8PDq//Dw7P/x8e//8vLw
+//Ly8P/y8vD/8vLx//Ty8v/19PD/9vPr//fz6f/69Ob/+vLh/+7j1P/Xx7b/0b2r/8Crmv+agG3/spmF
+/863pP/Twa3/18u0/9nLtf/Qv6r/zbyr/8CvoP+8q57/uKac/66clP/LuK7/08Gz/9LArv/Fs6D/yrWj
+/7ijkv+nkoL/rpmI/6yYh/+Pe2//dmVb/4p3a/+smYj/qpiF/6eTgv+Qe3P/jXpy/2ZWUv8+MS7/TD8/
+/1NCP/+Cb2j/p5KI/6KPgP+Ugm//moh2/5uIef/m3NH/4dTH/9jIt/++qpX/wKmT/8SrlP+9pZD/vqmU
+/72plf/EsJ//wLCj/8K9tP/Ox7v/0cm9/93Ux//m2s7/49jI/+PYy//n3tX/6OHW/+flz//m4s7/5+DT
+/+jj1v/t6uD/7Ovh/+vr5P/s6+b/7ezn/+3s5//t7Of/8fDq/+/v6//v7+3/8PDt/+/v7P/v7+3/8PDw
+//Lw8v/18O//9vHn//bv4P/i2sn/1si1/8y7p//JtJ//v6WQ/7eahf/Gs53/xLSf/9DBrv/PwLD/0sO5
+/8y/sP/Kvqv/wrWl/76wpP+5rKD/saGZ/7mlmv/Ltqv/xbOk/8y7rP/AsaD/t6SU/6yZif+kkYP/indq
+/6GOgP/NuKz/tqGW/7Ofkf+5ppX/sqCM/7Wijv+wnIr/sJ2O/35uZf8/Mi//Nioq/0IxMf+Hc27/m4h+
+/6COff+Ugm7/n415/5F+b//LvK7/xrao/76tnv+wno//sZ6O/7Wonf+uq6X/w8C5/87Kx//T0c7/2tnV
+/9/c3P/g29f/4drV/97Vyv/c0cX/4NTF/+HVx//h1sn/6+HR/+/lzv/r483/5t3L/+bbzf/j2s3/6N7T
+/+zk2f/m5Nv/5+Xb/+vo3//r6d//7Org/+/r5f/v6+b/8vDq//Hu5//v6+b/7efi//Hn4f/w5Nr/59rN
+/8q6q/++rZv/vquY/7ekkf+/q5n/zrmm/8Ksmv/Ku6r/zMCw/8a5rf+/r6b/taWd/7qsoP/CtaX/w7an
+/7yvov+9sKT/wrSo/8Wwpv/Jtaf/y7mn/8y7q//Lu6j/y7eq/8Wwo/+1oJL/kHxu/2xaTf+fin3/lYR3
+/49+b/+fjX//sZ6P/7yomf+nloL/inpq/5mMf/9lWVH/W09L/1dGQ/+Ic23/j3xx/5WDc/+jkH3/hnRl
+/3BhV/+4n43/r5mI/6WVif/Atq7/0c3I/9TRz//X19T/3d7a/+jn5P/i4t7/4uDc/+vd3P/s4Nv/5tvR
+/+bc0P/q4NH/6+PV/+rh1P/i2cn/49bF/+bWxP/o2cT/3M22/82/qv/NvKz/0b2v/9G+sv/FvK3/z8e2
+/9bNvP/d1MT/4dnI/+nf0//n3tH/6uDU/+Pazv/b0sX/3dDC/8+/rf/Tvq3/zrem/72jkv/EqJj/t6KS
+/6GOgf+qmo3/zL6y/9PIuv/Wx7z/1cS6/829s//Bsqb/uquf/76uov+6q5z/uquc/7ipmf/EtKX/vKud
+/7Sgmf/Ktqv/08Gy/9LArv/HtaL/tqOV/6ybjf+smon/t6CP/4p0Y/9rWUr/jHts/5yKe/+QfnT/mod/
+/5+Nhf+Ed2r/kYR3/4t9dP9tYFj/VkpD/1JBOv+IdGz/h3Rp/5F/cv+Jdmj/hXNp/2JSTf+0nIn/mYZ2
+/72wpv/Lx8P/1Nfa/+Lg3v/s39H/3tPH/9LHu//Rxrr/5tnN/+LZyv/o39D/5t3L/+PayP/s487/3tTF
+/9PIuv/VyLf/1cSz/9C/rP/Vwqz/x7Sf/826pv/Twa7/0b6v/8y6rP/GtqL/x7ml/8q7pv/QwKz/0sKu
+/83Bs//Sxrn/0MO3/9HEuf++sqX/vrKi/8u6qP/Luaj/vaia/6GOgf+bh3r/indt/3hmXP+qmY3/xLOm
+/8y9r//RwrX/z76y/9G/tP/Ftaj/x7er/8W1p/+/r6D/uquc/7ipmv++rp//taWY/6OSiv+wnpX/uaid
+/8GwoP++rZz/ppaK/5KDdv+aiXz/taCR/7OdjP+rmIb/sZ+P/6uaiv+HdWv/e2ph/39vZ/+JenL/oJCH
+/4l5c/9NPz3/SDo5/0c3Mv9fTkb/ZFNK/4BuYf+Gc2X/eGZa/1hIQP+fh3X/lYJz/7Glmv+tp6L/wcLC
+/8zEvf/Qu6b/xLGe/6eVg/+4pZP/ybik/8zBq//LwKz/18u3/9LGsv/Lv63/vK2e/7ammP+jkoP/r5yJ
+/8awnf+5o4//moNv/7ulkf/PvKf/0cGt/9XFsP/Vwar/z7uk/8aznP/Ktp//ybWe/8e4pv/MvK7/zb2t
+/829rf/Tw7T/08Kw/8Wzov+mlIX/emtg/3BhWf94amP/d2hj/4Bxav+gjoT/vKmd/8Ctnf++rp//zL2t
+/9LCs//Ht6j/ybmq/8e3qP/Juar/wbKj/7Chkv+fkIL/n5GE/5aIgf+ShHv/n5GH/6qdkP+2qZn/s6ab
+/6qckv+woJT/qZiJ/6qWh/+6p5b/sZ+P/56Nfv9yYVf/bV1U/4l3b/+fjIT/jXtz/3ZlX/9XRkP/XEtK
+/1dHQv9HNi//Z1ZM/25dUf+Oe23/jXls/4BtYf+9qpn/t6SV/66cj/+2pZn/p5mO/5yMfv+Qf23/o5F+
+/6uZhv+1oo7/uKaT/7irlv++sZ7/ppiI/5aJfP+cjIT/p5WH/7Gejv+mkoH/p5B+/8CnlP+Uemf/jXJe
+/76kkP/QvKf/0sKt/9XHsv/Vxa7/1cWu/9DAqv/GtqD/vKuW/7Khjf+/rZn/ybai/9C8qP/MuqX/08Cr
+/827p/+mlIb/eWxk/29kXf92bGn/fG1u/4N0cf+OfXf/uqab/66Zif+ajHr/xLWj/9LFsP/GuKX/x7mm
+/8a2pv/AsKL/t6eZ/66ekP+nmIn/qZqN/46CfP+AdG7/nJCG/6ibkP+ZjoH/lYqB/6OYjv+rnpP/rZ2Q
+/5qJe/+ejX7/qJeG/6GQgf+MenD/k4B4/4t5cP+Kd2n/e2pc/4l1a/+EcWj/e2hg/2xaU/9YR0D/YlFI
+/2lYTP+Jdmj/kHxt/5iDcv+1pJj/vqub/8Ktm/+/ppL/wqWQ/8Cnk/+6qZj/vKqZ/76sm/+vnYz/opKB
+/6CSgf+Nf3H/cmNa/2dZVP+QgH7/oY6B/7ikk//CqZn/rpSC/76ijv+8nYn/xaSP/8+znf/Svaf/0sKs
+/9LFr//QwrD/0MKw/7msm//Lvaz/zcCv/8e0oP+9p5T/wq2a/8y2o//LtaL/x7Of/7Ohjv+QgXP/bGFZ
+/2RcV/93bWz/eW1u/3BiYf95aWP/m4Z8/6+ZiP+zo5H/wrOg/8u8qv/Huab/xLWj/8a4pv+8rJ3/v6+g
+/8OzpP/AsKL/vq+i/66hnf+YjIb/opaO/6idkv+LgXb/lYuE/6GWjf+mmY//rp+U/3ZmW/9rXE7/jn5u
+/52MfP+gjoL/moh//457cf+ei3b/nIl1/415aP+Jdmb/g3Bi/3RhWf9wXlX/YVBI/2lYTP9+bF7/fmpb
+/412Zf8ADgEAAAMAAAABAFcAAAEBAAMAAAABAEAAAAECAAMAAAAEAABXtgEDAAMAAAABAAEAAAEGAAMA
+AAABAAIAAAERAAQAAAABAAAACAESAAMAAAABAAEAAAEVAAMAAAABAAQAAAEWAAMAAAABAEAAAAEXAAQA
+AAABAABXAAEcAAMAAAABAAEAAAFSAAMAAAABAAEAAAFTAAMAAAAEAABXvodzAAcAAAfYAABXxgAAAAAA
+CAAIAAgACAABAAEAAQABAAAH2GFwcGwCIAAAbW50clJHQiBYWVogB9kAAgAZAAsAGgALYWNzcEFQUEwA
+AAAAYXBwbAAAAAAAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1hcHBsAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALZGVzYwAAAQgAAABvZHNjbQAAAXgAAAWcY3BydAAABxQA
+AAA4d3RwdAAAB0wAAAAUclhZWgAAB2AAAAAUZ1hZWgAAB3QAAAAUYlhZWgAAB4gAAAAUclRSQwAAB5wA
+AAAOY2hhZAAAB6wAAAAsYlRSQwAAB5wAAAAOZ1RSQwAAB5wAAAAOZGVzYwAAAAAAAAAUR2VuZXJpYyBS
+R0IgUHJvZmlsZQAAAAAAAAAAAAAAFEdlbmVyaWMgUkdCIFByb2ZpbGUAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG1sdWMAAAAAAAAAHwAAAAxza1NLAAAAKAAAAYRk
+YURLAAAALgAAAaxjYUVTAAAAJAAAAdp2aVZOAAAAJAAAAf5wdEJSAAAAJgAAAiJ1a1VBAAAAKgAAAkhm
+ckZVAAAAKAAAAnJodUhVAAAAKAAAApp6aFRXAAAAFgAAAsJuYk5PAAAAJgAAAthjc0NaAAAAIgAAAv5o
+ZUlMAAAAHgAAAyBpdElUAAAAKAAAAz5yb1JPAAAAJAAAA2ZkZURFAAAALAAAA4prb0tSAAAAFgAAA7Zz
+dlNFAAAAJgAAAth6aENOAAAAFgAAA8xqYUpQAAAAGgAAA+JlbEdSAAAAIgAAA/xwdFBPAAAAJgAABB5u
+bE5MAAAAKAAABERlc0VTAAAAJgAABB50aFRIAAAAJAAABGx0clRSAAAAIgAABJBmaUZJAAAAKAAABLJo
+ckhSAAAAKAAABNpwbFBMAAAALAAABQJydVJVAAAAIgAABS5hckVHAAAAJgAABVBlblVTAAAAJgAABXYA
+VgFhAGUAbwBiAGUAYwBuAP0AIABSAEcAQgAgAHAAcgBvAGYAaQBsAEcAZQBuAGUAcgBlAGwAIABSAEcA
+QgAtAGIAZQBzAGsAcgBpAHYAZQBsAHMAZQBQAGUAcgBmAGkAbAAgAFIARwBCACAAZwBlAG4A6AByAGkA
+YwBDHqUAdQAgAGgA7ABuAGgAIABSAEcAQgAgAEMAaAB1AG4AZwBQAGUAcgBmAGkAbAAgAFIARwBCACAA
+RwBlAG4A6QByAGkAYwBvBBcEMAQzBDAEOwRMBD0EOAQ5ACAEPwRABD4ERAQwBDkEOwAgAFIARwBCAFAA
+cgBvAGYAaQBsACAAZwDpAG4A6QByAGkAcQB1AGUAIABSAFYAQgDBAGwAdABhAGwA4QBuAG8AcwAgAFIA
+RwBCACAAcAByAG8AZgBpAGyQGnUoACAAUgBHAEIAIIJyX2ljz4/wAEcAZQBuAGUAcgBpAHMAawAgAFIA
+RwBCAC0AcAByAG8AZgBpAGwATwBiAGUAYwBuAP0AIABSAEcAQgAgAHAAcgBvAGYAaQBsBeQF6AXVBeQF
+2QXcACAAUgBHAEIAIAXbBdwF3AXZAFAAcgBvAGYAaQBsAG8AIABSAEcAQgAgAGcAZQBuAGUAcgBpAGMA
+bwBQAHIAbwBmAGkAbAAgAFIARwBCACAAZwBlAG4AZQByAGkAYwBBAGwAbABnAGUAbQBlAGkAbgBlAHMA
+IABSAEcAQgAtAFAAcgBvAGYAaQBsx3y8GAAgAFIARwBCACDVBLhc0wzHfGZukBoAIABSAEcAQgAgY8+P
+8GWHTvZOAIIsACAAUgBHAEIAIDDXMO0w1TChMKQw6wOTA7UDvQO5A7oDzAAgA8ADwQO/A8YDrwO7ACAA
+UgBHAEIAUABlAHIAZgBpAGwAIABSAEcAQgAgAGcAZQBuAOkAcgBpAGMAbwBBAGwAZwBlAG0AZQBlAG4A
+IABSAEcAQgAtAHAAcgBvAGYAaQBlAGwOQg4bDiMORA4fDiUOTAAgAFIARwBCACAOFw4xDkgOJw5EDhsA
+RwBlAG4AZQBsACAAUgBHAEIAIABQAHIAbwBmAGkAbABpAFkAbABlAGkAbgBlAG4AIABSAEcAQgAtAHAA
+cgBvAGYAaQBpAGwAaQBHAGUAbgBlAHIAaQENAGsAaQAgAFIARwBCACAAcAByAG8AZgBpAGwAVQBuAGkA
+dwBlAHIAcwBhAGwAbgB5ACAAcAByAG8AZgBpAGwAIABSAEcAQgQeBDEESQQ4BDkAIAQ/BEAEPgREBDgE
+OwRMACAAUgBHAEIGRQZEBkEAIAYqBjkGMQZKBkEAIABSAEcAQgAgBicGRAY5BicGRQBHAGUAbgBlAHIA
+aQBjACAAUgBHAEIAIABQAHIAbwBmAGkAbABldGV4dAAAAABDb3B5cmlnaHQgMjAwNyBBcHBsZSBJbmMu
+LCBhbGwgcmlnaHRzIHJlc2VydmVkLgBYWVogAAAAAAAA81IAAQAAAAEWz1hZWiAAAAAAAAB0TQAAPe4A
+AAPQWFlaIAAAAAAAAFp1AACscwAAFzRYWVogAAAAAAAAKBoAABWfAAC4NmN1cnYAAAAAAAAAAQHNAABz
+ZjMyAAAAAAABDEIAAAXe///zJgAAB5IAAP2R///7ov///aMAAAPcAADAbNIlJicoWiRjbGFzc25hbWVY
+JGNsYXNzZXNfEBBOU0JpdG1hcEltYWdlUmVwoycpKlpOU0ltYWdlUmVwWE5TT2JqZWN00iUmLC1XTlNB
+cnJheaIsKtIlJi8wXk5TTXV0YWJsZUFycmF5oy8sKtMyMwo0NTZXTlNXaGl0ZVxOU0NvbG9yU3BhY2VE
+MCAwABADgAzSJSY4OVdOU0NvbG9yojgq0iUmOzxXTlNJbWFnZaI7Kl8QD05TS2V5ZWRBcmNoaXZlctE/
+QFRyb290gAEACAARABoAIwAtADIANwBGAEwAVwBeAGUAcgB5AIEAgwCFAIoAjACOAJcAnACnAKkAqwCt
+ALIAtQC3ALkAuwC9AMIA2QDbAN1gf2CEYI9gmGCrYK9gumDDYMhg0GDTYNhg52DrYPJg+mEHYQxhDmEQ
+YRVhHWEgYSVhLWEwYUJhRWFKAAAAAAAAAgEAAAAAAAAAQQAAAAAAAAAAAAAAAAAAYUw
+</mutableData>
+        </image>
+        <image name="images-1" width="261" height="193"/>
+    </resources>
+</document>
