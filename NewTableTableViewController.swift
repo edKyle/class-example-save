@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol ButtonTableViewCellDelegate:class{
+    func rightButton()
+    
+}
+
 class NewTableTableViewController: UITableViewController, ButtonTableViewCellDelegate{
 
     let imaageCellIdenterfier = "specialcell"
@@ -30,7 +35,7 @@ class NewTableTableViewController: UITableViewController, ButtonTableViewCellDel
         
 //     self.tableView.registerNib(UINib(nibName: "ButtonTableViewCell", bundle: nil), forCellReuseIdentifier: "buttoncell")
         
-        self.tableView.estimatedRowHeight = 100
+        self.tableView.estimatedRowHeight = 80
         self.tableView.rowHeight = UITableViewAutomaticDimension
      }
 

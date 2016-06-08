@@ -8,9 +8,7 @@
 
 import UIKit
 
-protocol ButtonTableViewCellDelegate:class{
-    func rightButton()
-}
+
 
 class ButtonTableViewCell: UITableViewCell {
     

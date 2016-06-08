@@ -21,13 +21,6 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8Z-be-hQF">
-                        <rect key="frame" x="195" y="16" width="324" height="122"/>
-                        <string key="text">jifjirjkjflskdjflkfjksdjfjsdksdlkljfdkljfkjdkncjjhdgsfhdjbfjsbkdjfnnsjcncjnjdkmfnmdnfjkwjijsidskdksmjcdskfhjhfskjdfjdjnfjcnjdncsjdsdkfksfnjsfnsjknsncjnsjdnsjsdnfdm c nsdkdhfjksdfsfcnjdnsjnjcnjsnjdcjdksdksmdsjdskdfdfmsjijiwjeksamdkasmdskmdkasd</string>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TWolwp2" translatesAutoresizingMaskIntoConstraints="NO" id="fXn-EE-Y6K">
                         <rect key="frame" x="8" y="8" width="150" height="100"/>
                         <constraints>
@@ -35,6 +28,13 @@
                             <constraint firstAttribute="height" constant="100" id="p59-9T-Q28"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8Z-be-hQF">
+                        <rect key="frame" x="195" y="16" width="324" height="122"/>
+                        <string key="text">jifjirjkjflskdjflkfjksdjfjsdksdlkljfdkljfkjdkncjjhdgsfhdjbfjsbkdjfnnsjcncjnjdkmfnmdnfjkwjijsidskdksmjcdskfhjhfskjdfjdjnfjcnjdncsjdsdkfksfnjsfnsjknsncjnsjdnsjsdnfdm c nsdkdhfjksdfsfcnjdnsjnjcnjsnjdcjdksdksmdsjdskdfdfmsjijiwjeksamdkasmdskmdkasd</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="v8Z-be-hQF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="0BR-vc-FM3"/>
